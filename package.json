@@ -1,0 +1,41 @@
+{
+  "name": "@oxy-arma-scripts/mm-cli",
+  "version": "1.0.0",
+  "description": "CLI to automate managment of missions",
+  "homepage": "https://github.com/oxy-arma-scripts/mm-cli#readme",
+  "bugs": {
+    "url": "https://github.com/oxy-arma-scripts/mm-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxy-arma-scripts/mm-cli.git"
+  },
+  "license": "MIT",
+  "author": "oxypomme",
+  "main": "bin/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "sort-package-json": "^2.1.0"
+  }
+}
